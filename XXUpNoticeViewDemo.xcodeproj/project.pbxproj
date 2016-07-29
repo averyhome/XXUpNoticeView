@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		300BBB4B1D4B065B00D79760 /* XXItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 300BBB4A1D4B065B00D79760 /* XXItem.m */; };
+		300BBB511D4B280900D79760 /* XXUpNoticeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 300BBB501D4B280900D79760 /* XXUpNoticeView.m */; };
 		305511631D49E904002A0711 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 305511621D49E904002A0711 /* main.m */; };
 		305511661D49E904002A0711 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 305511651D49E904002A0711 /* AppDelegate.m */; };
 		305511691D49E904002A0711 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 305511681D49E904002A0711 /* ViewController.m */; };
@@ -16,7 +17,6 @@
 		305511711D49E904002A0711 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3055116F1D49E904002A0711 /* LaunchScreen.storyboard */; };
 		3055117C1D49E904002A0711 /* XXUpNoticeViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3055117B1D49E904002A0711 /* XXUpNoticeViewDemoTests.m */; };
 		305511871D49E904002A0711 /* XXUpNoticeViewDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 305511861D49E904002A0711 /* XXUpNoticeViewDemoUITests.m */; };
-		305511961D49E925002A0711 /* XXUpNoticeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 305511951D49E925002A0711 /* XXUpNoticeView.m */; };
 		3055119E1D4AF9D8002A0711 /* XXTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3055119C1D4AF9D8002A0711 /* XXTableViewCell.m */; };
 		3055119F1D4AF9D8002A0711 /* XXTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3055119D1D4AF9D8002A0711 /* XXTableViewCell.xib */; };
 /* End PBXBuildFile section */
@@ -41,6 +41,8 @@
 /* Begin PBXFileReference section */
 		300BBB491D4B065B00D79760 /* XXItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXItem.h; sourceTree = "<group>"; };
 		300BBB4A1D4B065B00D79760 /* XXItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXItem.m; sourceTree = "<group>"; };
+		300BBB4F1D4B280900D79760 /* XXUpNoticeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXUpNoticeView.h; sourceTree = "<group>"; };
+		300BBB501D4B280900D79760 /* XXUpNoticeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXUpNoticeView.m; sourceTree = "<group>"; };
 		3055115E1D49E904002A0711 /* XXUpNoticeViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XXUpNoticeViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		305511621D49E904002A0711 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		305511641D49E904002A0711 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -57,8 +59,6 @@
 		305511821D49E904002A0711 /* XXUpNoticeViewDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XXUpNoticeViewDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		305511861D49E904002A0711 /* XXUpNoticeViewDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXUpNoticeViewDemoUITests.m; sourceTree = "<group>"; };
 		305511881D49E904002A0711 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		305511941D49E925002A0711 /* XXUpNoticeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XXUpNoticeView.h; path = XXUpNoticeViewDemo/XXUpNoticeView.h; sourceTree = SOURCE_ROOT; };
-		305511951D49E925002A0711 /* XXUpNoticeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XXUpNoticeView.m; path = XXUpNoticeViewDemo/XXUpNoticeView.m; sourceTree = SOURCE_ROOT; };
 		3055119B1D4AF9D8002A0711 /* XXTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXTableViewCell.h; sourceTree = "<group>"; };
 		3055119C1D4AF9D8002A0711 /* XXTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXTableViewCell.m; sourceTree = "<group>"; };
 		3055119D1D4AF9D8002A0711 /* XXTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XXTableViewCell.xib; sourceTree = "<group>"; };
@@ -160,8 +160,8 @@
 		3055119A1D4AF9A6002A0711 /* XXUpNoticeView */ = {
 			isa = PBXGroup;
 			children = (
-				305511941D49E925002A0711 /* XXUpNoticeView.h */,
-				305511951D49E925002A0711 /* XXUpNoticeView.m */,
+				300BBB4F1D4B280900D79760 /* XXUpNoticeView.h */,
+				300BBB501D4B280900D79760 /* XXUpNoticeView.m */,
 			);
 			path = XXUpNoticeView;
 			sourceTree = "<group>";
@@ -299,10 +299,10 @@
 			files = (
 				300BBB4B1D4B065B00D79760 /* XXItem.m in Sources */,
 				305511691D49E904002A0711 /* ViewController.m in Sources */,
-				305511961D49E925002A0711 /* XXUpNoticeView.m in Sources */,
 				305511661D49E904002A0711 /* AppDelegate.m in Sources */,
 				3055119E1D4AF9D8002A0711 /* XXTableViewCell.m in Sources */,
 				305511631D49E904002A0711 /* main.m in Sources */,
+				300BBB511D4B280900D79760 /* XXUpNoticeView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
